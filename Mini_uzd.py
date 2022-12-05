@@ -1,6 +1,6 @@
 brilles = ['Oskar', 'Estere', 'Reini', 'Rozit']
 
-inp = input('Kadu loop? ')
+inp = input('Kadu looop? ')
 
 def forl():
     print('For loop: ')
