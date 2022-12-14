@@ -1,13 +1,27 @@
-my_dictionary = {}
+# create an empty dictionary
+my_dict = {}
 
-my_dictionary1 = {
-    'abols1' : 'green',
-    'abols2' : 'red',
-    'abols4' : 'blue',
-}
+while True:
+    key = input('Ievadi vardu: ')
+    if key in my_dict:
+        print('Vards jau eksiste: ')
+        continue
 
-my_dictionary1['abols3'] = 'blue'
+    value = input('Ievadi savu miljako edienu: ')
+    
+    my_dict[key] = value
+    choice = input('Vai velies turpinat? (y/n)')
+    if choice == 'n':
+        print(my_dict)
+        break
+    elif choice == 'y':
+        continue
+    elif choice != 'n':
+        print('Analfabets?')
+        break
+    
 
-for key, value in my_dictionary1.items():
-    if value == 'blue':
-        print(f'{key} : {value}')
+
+    
+    
+    
